@@ -29,7 +29,7 @@ export default function LoginPageE() {
     }
     const handeChange =async()=>{
         const {Email,Password} = send
-        const res =await axios.post('http://localhost:3000/login',{Email,Password})
+        const res =await axios.post('https://just-backend.onrender.com/login',{Email,Password})
         console.log(res.data)
         if(res.data =='Register first'){
             toast.error(res.data)

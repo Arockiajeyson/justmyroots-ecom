@@ -21,7 +21,7 @@ export default function Signup() {
     }
     const signup =async()=>{
         const {Name,Email,Password} =state
-        const res =await aixos.post('http://localhost:3000/register',{Name,Email,Password})
+        const res =await aixos.post('https://just-backend.onrender.com/register',{Name,Email,Password})
         if(res.data =='try with new Email Id'){
             toast.error('Email id already exist')
         }else{
