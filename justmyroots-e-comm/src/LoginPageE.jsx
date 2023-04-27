@@ -42,14 +42,17 @@ export default function LoginPageE() {
     return (
         <div className='con-div'>
             {state ? <><div>
-                <h3>Login</h3>
+                <marquee behavior="" direction="left">
+                <p className='marq'>Refresh to go back </p>
+            </marquee>
+            <h3 style={{textAlign:'center'}}>Login</h3>
             </div>
             <div>
                 <input type="email" placeholder='Enter email ....' onChange={(e)=>setSend({...send,Email:e.target.value})}/>
             </div>
             <div>
                 <input type={hideP ? 'text':'password'} placeholder='Enter password....' onChange={(e)=>setSend({...send,Password:e.target.value})}/>
-                <div style={{position:'absolute',top:'25.5em',right:'30em',cursor:'pointer'}} onClick={visible}>{!hideP ? <BiHide/>:<MdOutlineVisibility/>}</div>
+                <div style={{position:'absolute',top:'28.5em',right:'30em',cursor:'pointer'}} onClick={visible}>{!hideP ? <BiHide/>:<MdOutlineVisibility/>}</div>
             </div>
             <div style={{width:'50%',marginTop:'10px'}}>
                 <button style={{width:'100%',height:'40px'}} onClick={handeChange}>Login</button>

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('https://img.freepik.com/free-psd/tropical-green-leaves-background_24972-1942.jpg?w=1380&t=st=1679034864~exp=1679035464~hmac=792e67b0d70bc63d5b9225dc89f30283a8f2028e532a7a800578cc4748e7aaed');
+  background-color: rgb(241, 204, 240);
   width: 100vw;
   height: 100vh;
 }
@@ -22,7 +22,7 @@
   background-image: url('https://img.freepik.com/free-vector/background-design-with-mandalas-pattern_1308-70343.jpg?size=626&ext=jpg&ga=GA1.1.1575526386.1679034065&semt=sph');
   border-radius: .8em;
   width: 50vw;
-  height: 50vh;
+  height: 59vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,4 +111,8 @@
 .btn:hover{
   background-color:rgb(100, 100, 232);
   cursor: pointer;
+}
+.marq{
+  color:black;
+  font-size: 1.5em;
 }
